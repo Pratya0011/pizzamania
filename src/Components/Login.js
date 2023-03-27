@@ -33,17 +33,19 @@ function SignUp() {
         loggedIn.isLoggedIn=true;
         loggedIn.id=data[0].id
         localStorage.setItem('loggedIn',JSON.stringify(loggedIn))
-        alert('Login Success')
+        
         navigate('/')
         window.location.reload()
+        alert('Login Success')
       }
       else if(data.length!==0 && !state.route){
         loggedIn.isLoggedIn=true;
         loggedIn.id=data[0].id
         localStorage.setItem('loggedIn',JSON.stringify(loggedIn))
-        alert('Login Success')
+        
         navigate('/')
         window.location.reload()
+        alert('Login Success')
       }
       else{
         setDisplay('deActive')

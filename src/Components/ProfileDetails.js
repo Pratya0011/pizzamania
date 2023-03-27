@@ -18,7 +18,6 @@ function ProfileDetails() {
   const onSaveHandler = () => {
     user[userId.id].name = updatedName;
     localStorage.setItem("userData", JSON.stringify(user));
-    window.location.reload();
     setSave(true);
     setToggle("Edit");
   };
