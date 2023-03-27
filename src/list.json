@@ -1,0 +1,422 @@
+[
+    {
+        "id": 1,
+        "name":"Margherita",
+        "size":"Small",
+        "price":99,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 2,
+        "name":"Margherita",
+        "size":"Medium",
+        "price":199,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 3,
+        "name":"Margherita",
+        "size":"Large",
+        "price":395,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 4,
+        "name":"Double Cheese Margherita",
+        "size":"Small",
+        "price":165,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 5,
+        "name":"Double Cheese Margherita",
+        "size":"Medium",
+        "price":350,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 6,
+        "name":"Double Cheese Margherita",
+        "size":"Large",
+        "price":495,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 7,
+        "name":"Farm House",
+        "size":"Small",
+        "price":205,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 8,
+        "name":"Farm House",
+        "size":"Medium",
+        "price":385,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 9,
+        "name":"Farm House",
+        "size":"Large",
+        "price":595,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 10,
+        "name":"Peppy Paneer",
+        "size":"Small",
+        "price":205,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 11,
+        "name":"Peppy Paneer",
+        "size":"Medium",
+        "price":385,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 12,
+        "name":"Peppy Paneer",
+        "size":"Large",
+        "price":595,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 13,
+        "name":"Mexican Green Wave",
+        "size":"Small",
+        "price":205,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 14,
+        "name":"Mexican Green Wave",
+        "size":"Medium",
+        "price":385,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 15,
+        "name":"Mexican Green Wave",
+        "size":"Large",
+        "price":595,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 16,
+        "name":"Deluxe Veggie",
+        "size":"Small",
+        "price":235,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 17,
+        "name":"Deluxe Veggie",
+        "size":"Medium",
+        "price":450,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 18,
+        "name":"Deluxe Veggie",
+        "size":"Large",
+        "price":695,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 19,
+        "name":"Veg Extravaganza",
+        "size":"Small",
+        "price":235,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 20,
+        "name":"Veg Extravaganza",
+        "size":"Medium",
+        "price":450,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 21,
+        "name":"Veg Extravaganza",
+        "size":"Large",
+        "price":695,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 22,
+        "name":"CHEESE N CORN",
+        "size":"Small",
+        "price":165,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 23,
+        "name":"CHEESE N CORN",
+        "size":"Medium",
+        "price":305,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 24,
+        "name":"CHEESE N CORN",
+        "size":"Large",
+        "price":495,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 25,
+        "name":"PANEER MAKHANI",
+        "size":"Small",
+        "price":205,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 26,
+        "name":"PANEER MAKHANI",
+        "size":"Medium",
+        "price":385,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 27,
+        "name":"PANEER MAKHANI",
+        "size":"Large",
+        "price":595,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 28,
+        "name":"VEGGIE PARADISE",
+        "size":"Small",
+        "price":205,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 29,
+        "name":"VEGGIE PARADISE",
+        "size":"medium",
+        "price":385,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 30,
+        "name":"VEGGIE PARADISE",
+        "size":"large",
+        "price":595,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 31,
+        "name":"FRESH VEGGIE",
+        "size":"Small",
+        "price":165,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 32,
+        "name":"FRESH VEGGIE",
+        "size":"Medium",
+        "price":305,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 33,
+        "name":"FRESH VEGGIE",
+        "size":"Large",
+        "price":495,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 34,
+        "name":"Indi Tandoori Paneer",
+        "size":"Small",
+        "price":235,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 35,
+        "name":"Indi Tandoori Paneer",
+        "size":"Medium",
+        "price":450,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 36,
+        "name":"Indi Tandoori Paneer",
+        "size":"Large",
+        "price":695,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 37,
+        "name":"PEPPER BARBECUE CHICKEN",
+        "size":"Small",
+        "price":165,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 38,
+        "name":"PEPPER BARBECUE CHICKEN",
+        "size":"Medium",
+        "price":305,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 39,
+        "name":"PEPPER BARBECUE CHICKEN",
+        "size":"Large",
+        "price":495,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 40,
+        "name":"CHICKEN SAUSAGE",
+        "size":"Small",
+        "price":165,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 41,
+        "name":"CHICKEN SAUSAGE",
+        "size":"Medium",
+        "price":305,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 42,
+        "name":"CHICKEN SAUSAGE",
+        "size":"Large",
+        "price":495,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 43,
+        "name":"Chicken Golden Delight",
+        "size":"Small",
+        "price":235,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 44,
+        "name":"Chicken Golden Delight",
+        "size":"medium",
+        "price":450,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 45,
+        "name":"Chicken Golden Delight",
+        "size":"large",
+        "price":695,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 46,
+        "name":"Non Veg Supreme",
+        "size":"Small",
+        "price":295,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 47,
+        "name":"Non Veg Supreme",
+        "size":"Medium",
+        "price":555,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 48,
+        "name":"Non Veg Supreme",
+        "size":"Large",
+        "price":835,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 49,
+        "name":"Chicken Dominator",
+        "size":"Small",
+        "price":295,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 40,
+        "name":"Chicken Dominator",
+        "size":"Medium",
+        "price":555,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 51,
+        "name":"Chicken Dominator",
+        "size":"Large",
+        "price":835,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 52,
+        "name":"PEPPER BARBECUE & ONION",
+        "size":"Small",
+        "price":205,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 53,
+        "name":"PEPPER BARBECUE & ONION",
+        "size":"Medium",
+        "price":385,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 54,
+        "name":"PEPPER BARBECUE & ONION",
+        "size":"Large",
+        "price":495,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 55,
+        "name":"CHICKEN FIESTA",
+        "size":"Small",
+        "price":235,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 56,
+        "name":"CHICKEN FIESTA",
+        "size":"Medium",
+        "price":450,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 57,
+        "name":"CHICKEN FIESTA",
+        "size":"Large",
+        "price":695,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 58,
+        "name":"Indi Chicken Tikka",
+        "size":"small",
+        "price":305,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 59,
+        "name":"Indi Chicken Tikka",
+        "size":"medium",
+        "price":520,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    },
+    {
+        "id": 60,
+        "name":"Indi Chicken Tikka",
+        "size":"large",
+        "price":765,
+        "image":"https://media.istockphoto.com/photos/pizza-with-chicken-isolated-on-white-background-picture-id888040002"
+    }
+]

@@ -1,38 +1,1036 @@
+* {
+  font-family: sans-serif;
+}
+body{
+  background-image: url("./Images/engin-akyurt-IfAb0bjhHlc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .App {
-  text-align: center;
+  height: 88.6vh;
+  width: 100vw;
+}
+body {
+  background-color: black;
+}
+/* complete nav bar */
+.nav-bar {
+  background-color: black;
+  padding-top: 15px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+/* logo nam and nav menu */
+.right-menu {
+  text-align: right;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+/* name and logo */
+#name {
+  float: left;
+  margin: 10px;
+  margin-top: 15px;
+}
+.right-menu ul {
+  margin-right: 30px;
+}
+/*nav buttons in the right*/
+.right-menu ul li {
+  display: inline-block;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 20px;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.link {
+  text-decoration: none;
+  color: red;
+}
+.link:hover {
+  color: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Home Component */
+/* Information div */
+.main {
+  height: 88.6vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 90px;
+}
+.info {
+  width: 250px;
+  font-family: sans-serif;
+  margin-left: 50px;
+  margin-top: 200px;
+  width: 300px;
+  color: red;
+}
+.info :first-child {
+  margin-left: 5px;
+  font-style: italic;
+  font-weight: normal;
+}
+.info :last-child {
+  font-size: 50px;
+}
+
+/* Order Button */
+#info {
+  margin-left: 50px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  width: 200px;
+  border-radius: 20px;
+  border: 1px solid black;
+  color: red;
+  font-weight: bold;
+}
+#info:hover {
+  background-color: black;
+  border: 2px solid white;
+}
+
+
+/* pizza image*/
+.image {
+  position: absolute;
+  top: 200px;
+  left: 800px;
+}
+
+/* Sign Up Coomponent */
+/* login container */
+.login-div {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  height: 87vh;
+  padding-left: 0px;
+  margin-top: 90px;
+}
+/* login container */
+.login {
+  background-color: rgba(0, 0, 0, 0.621);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 500px;
+  height: 450px;
+  padding: 50px;
+  padding-left: 0px;
+  border: 2px solid red;
+  color: red;
+  border-radius: 20px;
+}
+/* Button */
+.login button {
+  margin-top: 10px;
+  width: 5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  color: red;
+  border-color: orangered;
+  cursor: pointer;
+}
+.login button:hover {
+  background-color: rgba(0, 0, 0, 0.292);
+  color: red;
+  border-color: orangered;
+}
+.active {
+  margin-top: 1rem;
+  color: red;
+  display: none;
+}
+.deActive {
+  margin-top: 1rem;
+  color: red;
+  display: block;
+}
+/* Form */
+.login form {
+  margin: 20px;
+  width: 100%;
+}
+.login form label {
+  padding: 15px;
+  font-weight: bold;
+}
+.signup form label:first-child {
+  margin-left: 2rem;
+}
+.login form input {
+  background-color: rgb(44, 43, 43);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#confirmPassword {
+  margin-right: 4rem;
+}
+/* create account */
+.login p {
+  color: red;
+  font-weight: bold;
+}
+.login p:hover {
+  cursor: pointer;
+  color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
+/* Order Component */
+/* Item Grid */
+.order-component {
+  background-color: rgba(0, 0, 0, 0.89);
+}
+.order {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+}
+/* each item */
+.pizza {
+  text-align: center;
+  border: 3px solid whitesmoke;
+  border-radius: 1rem;
+}
+/* lebels */
+.lebels {
+  margin: 10px;
+}
+.lebels div {
+  margin: 10px;
+}
+.span {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.price {
+  font-weight: bold;
+}
+.name {
+  font-weight: bold;
+}
+.button button {
+  width: 80px;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  background-color: white;
+  color: orangered;
+}
+.button button:hover {
+  background-color: orangered;
+  color: white;
+}
+/* cart icon */
+
+#cart {
+  text-align: center;
+  width: 75px;
+  height: 35px;
+  border-radius: 22px;
+  color: rgb(251, 236, 236);
+  font-weight: bold;
+}
+
+.cart-icon ul li {
+  display: inline-block;
+  justify-content: space-between;
+  margin-right: 35px;
+  float: right;
+  list-style: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: normal;
+}
+.cart-icon ul {
+  width: 100%;
+  width: 100vw;
+  height: 40px;
+}
+.cart-icon {
+  margin-top: 90px;
+}
+/* Cart Component */
+/* the heading */
+.cart-heading {
+  padding: 30px 0 0 150px;
+  color: white;
+  font-weight: bold;
+}
+/* wrapper container */
+.container-cart {
+  margin-top: 90px;
+}
+.cart-div {
+  display: flex;
+  justify-content: space-around;
+}
+/* contains cart items */
+.main-div {
+  margin-top: 50px;
+  display: block;
+  width: 110vh;
+  margin-left: 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: beige;
+}
+.container-div {
+  display: flex;
+  align-items: center;
+  width: 90vh;
+  padding: 10px;
+}
+.item-details {
+  background-color: beige;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px;
+  padding-top: 10px;
+}
+.item-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+.item-size {
+  font-size: 10px;
+}
+.item-quantity {
+  font-size: 13px;
+}
+.item-price {
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+}
+.cart-button {
+  margin-left: 58vh;
+  display: flex;
+}
+.cart-button .remove {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.cart-button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-weight: bold;
+  width: 30px;
+}
+.cart-button button {
+  background-color: beige;
+  width: 20px;
+  padding: 2px;
+  border: none;
+  font-size: 25px;
+}
+/* remove button */
+.remove {
+  background-color: white;
+  width: 20px;
+  padding: 2px;
+  margin-left: 10px;
+  border: none;
+  font-size: 25px;
+  transform: rotate(45deg);
+  color: red;
+}
+/* Price Details container */
+.price-details {
+  background-color: beige;
+  height: 50vh;
+  margin-top: 50px;
+  width: 50vh;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.heading {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.342);
+}
+.item-count {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.item-value {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty-cart div {
+  font-size: 35px;
+  font-family: sans-serif;
+}
+
+/* place order button */
+.place-order {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+.place-order button {
+  background-color: red;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+}
+/* Address Component */
+.address-container {
+  margin-top: 90px;
+}
+.address-div {
+  margin-top: 50px;
+  width: 100vh;
+}
+.logged-in {
+  background-color: beige;
+  margin-bottom: 15px;
+}
+.loggedinheading {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  height: 40px;
+  background-color: beige;
+  font-weight: bold;
+}
+.addressName {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  height: 40px;
+  background-color: red;
+  font-weight: bold;
+}
+.diliveryAddress {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  height: 40px;
+  background-color: beige;
+  font-weight: bold;
+}
+.addressInput {
+  padding: 10px 0px 10px 20px;
+}
+.new-address {
+  padding: 20px 20px 20px 20px;
+}
+.new-address div {
+  margin: 20px;
+}
+.addressInput span {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.addressInput div {
+  padding-left: 32px;
+  padding-bottom: 10px;
+}
+.addressInput input[type="radio"] {
+  height: 15px;
+  width: 15px;
+}
+.deliverButton {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+.deliverButton button {
+  background-color: red;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+}
+.cancel {
+  margin-left: 10px;
+}
+.display {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  height: 40px;
+  background-color: red;
+  font-weight: bold;
+  border: 1px solid white;
+}
+.hide {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  height: 40px;
+  background-color: beige;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+  border: 1px solid white;
+  background-color: white;
+}
+.hide:hover {
+  background-color: red;
+  color: black;
+}
+.new-address div span {
+  margin: 20px;
+}
+.new-address div span input {
+  height: 40px;
+  width: 30vh;
+}
+.textarea {
+  margin-left: 20px;
+  width: 65vh;
+}
+
+/* Dropdown */
+.dropDown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  top: 80px;
+  right: 1rem;
+  background-color: white;
+  border: 1px solid grey;
+  padding-top: 10px;
+}
+.dropDown div {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.dropDown div:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.arrow {
+  position: absolute;
+  top: 70px;
+  right: 2.5rem;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+}
+/* Recipe Component */
+.recipe-container {
+  margin-top: 90px;
+  background-color: rgba(0, 0, 0, 0.89);
+}
+.recipe-container h1 {
+  color: white;
+}
+.form {
+  text-align: center;
+  margin: 35px;
+}
+/* search box */
+.form input {
+  width: 400px;
+  height: 35px;
+  border: none;
+  border-radius: 22px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(44, 43, 43);
+}
+/* search button */
+.form button {
+  margin: 10px;
+  height: 35px;
+  width: 70px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: red;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* recipe items */
+.recipe {
+  display: grid;
+  margin: 0.2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  background-color: beige;
+  padding-bottom: 10px;
+  padding-top: 2rem;
+}
+/* each template */
+.grid {
+  padding: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+/* label */
+.label {
+  text-align: center;
+  margin: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.pic {
+  text-align: center;
+}
+.pic img {
+  width: 250px;
+  border-radius: 50%;
+}
+.text {
+  text-align: center;
+}
+.text ul li {
+  margin: 5px;
+  padding: 5px;
+  font-size: 18px;
+}
+.save-recipe {
+  display: flex;
+  justify-content: flex-end;
+  width: 30vw;
+  padding: 10px;
+}
+.save-recipe button {
+  width: 80px;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: red;
+  font-weight: 800;
+}
+.save-recipe button:hover {
+  color: black;
+  background-color: red;
+}
+/* spinner */
+@keyframes spinner {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 76.56vh;
+  width: 100vw;
+}
+/* profile component */
+.profile-component {
+  margin-top: 90px;
+}
+.profile-container {
+  display: flex;
+}
+.profile-div {
+  margin: 50px;
+  width: 40vh;
+}
+.accountSettings {
+  background-color: beige;
+  margin: 0px 0px 15px 0px;
+  height: 45vh;
+}
+.account-section {
+  margin: 20px 0px 0px 10px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.account-section i {
+  margin-right: 20px;
+  font-size: 20px;
+  color: red;
+}
+.list {
+  margin-left: 30px;
+}
+.list ul li {
+  margin-top: 20px;
+}
+.account-details {
+  background-color: beige;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* Profile Details Component */
+.profileInformation {
+  margin: 20px 20px 10px 20px;
+  width: 50vw;
+}
+.profileInformation span:first-child {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.profileInformation span:last-child {
+  color: blue;
+  cursor: pointer;
+}
+.nameFild {
+  margin: 20px;
+}
+.nameFild span input {
+  height: 2.5rem;
+  margin: 10px 15px 10px 10px;
+}
+.nameFild span button {
+  width: 7rem;
+  height: 2.5rem;
+  color: black;
+  background-color: red;
+  font-weight: 700;
+  border: none;
+}
+.userNameField {
+  margin: 20px;
+}
+.userNameField span {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.userNameField input {
+  height: 2.5rem;
+  margin: 10px 15px 10px 10px;
+}
+.passwordField {
+  margin: 20px 20px 10px 20px;
+}
+.passwordField span:first-child {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.passwordField span:last-child {
+  color: blue;
+  cursor: pointer;
+}
+.passwordForm {
+  margin: 20px 20px 10px 20px;
+  background-color: white;
+  padding: 10px;
+}
+.passwordForm form div {
+  margin: 15px;
+}
+.passwordForm form div input {
+  height: 2.5rem;
+}
+.passwordForm form span {
+  margin: 15px;
+}
+.passwordForm form span button {
+  height: 2rem;
+  width: 5rem;
+  border: none;
+  color: black;
+  background-color: red;
+  font-weight: 700;
+}
+.deactivate {
+  margin: 20px 20px 20px 35px;
+  font-weight: 600;
+  color: blue;
+  cursor: pointer;
+}
+.deactiveForm {
+  margin: 20px 20px 20px 35px;
+  background-color: white;
+}
+.deactiveForm div {
+  margin: 15px 15px 15px 0px;
+}
+.deactiveForm div input {
+  height: 2.5rem;
+}
+.deactiveForm span {
+  margin: 0px 10px 0px 0px;
+}
+.deactiveForm span button {
+  border: none;
+  background-color: red;
+  color: black;
+  cursor: pointer;
+  font-weight: 700;
+  width: 7rem;
+  padding: 5px;
+}
+.popUpOpen {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.popUpClose {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.popup {
+  position: relative;
+  background-color: beige;
+  padding: 20px;
+  border-radius: 5px;
+}
+.popup h2 {
+  font-weight: 700;
+}
+.popup p {
+  font-weight: 700;
+}
+.popup div {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.popup button {
+  margin: 10px;
+  width: 5rem;
+  font-weight: 700;
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+}
+.popup button:hover {
+  background-color: black;
+}
+.cross {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+/* Manage Recipe Container */
+.recipeDetails {
+  width: 50vw;
+}
+.recipeDisplay {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px 10px 10px 10px;
+  background-color: white;
+  border: 1px solid white;
+}
+.recipeDisplay-div {
+  margin: 0px 15px 15px 0px;
+}
+.recipeDisplay-div span {
+  margin: 0px 20px 0px 0px;
+}
+.recipeDisplay-div span img {
+  border-radius: 50%;
+}
+.ingridients {
+  font-size: 14px;
+}
+.deleteRecipe {
+  display: flex;
+  justify-content: flex-end;
+}
+.deleteRecipe button {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  width: 5rem;
+}
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-family: sans-serif;
+}
+.saved-recipes {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+/* Manage Address Component */
+.addressDetails {
+  width: 50vw;
+}
+.manage-address {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.show {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  height: 40px;
+  padding-left: 15px;
+  background-color: red;
+  font-weight: bold;
+  border: 1px solid white;
+}
+.hidden {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-top: 10px;
+  background-color: beige;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+  padding-left: 15px;
+  border: 1px solid white;
+  background-color: white;
+}
+.hidden:hover {
+  background-color: red;
+  color: black;
+}
+.addressDisplay {
+  background-color: beige;
+  margin-top: 10px;
+}
+.addressDisplay-div {
+  border: 2px solid white;
+  padding: 15px;
+}
+.addressDisplay-div span {
+  font-weight: 700;
+  margin-right: 15px;
+}
+.delete-icon {
+  float: right;
+  cursor: pointer;
+}
+/* Invoice Component */
+.invoice-component {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+}
+.invoice-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100vw;
+  margin-top: 10px;
+}
+.invoice-div img {
+  height: 20vh;
+  width: 10vw;
+  animation: all 5s ease-in-out;
+}
+.invoice-div span {
+  font-size: 30px;
+}
+.order-image img {
+  height: 155px;
+  width: 150px;
+}
+.summary-div{
+  background-color: beige;
+  margin-top: 10px;
+}
+.container-invoice {
+  margin: 0px 0px 0px 15px;
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  padding: 10px;
+}
+.summary{
+  margin: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+.summary-address{
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+}
+.summary-address div{
+  font-weight: 550;
+}
+.summary-total{
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  font-weight: 700;
+}
+
+
