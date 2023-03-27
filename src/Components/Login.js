@@ -9,6 +9,7 @@ function SignUp() {
   const [username,setUsername]=useState('')
   const [password,setPassword]=useState('')
   const [display,setDisplay]=useState('active')
+  const [arr,setArr]=useState([])
   const state = useContext(stateContext)
   const navigate = useNavigate()
  
@@ -33,14 +34,14 @@ function SignUp() {
         loggedIn.id=data[0].id
         localStorage.setItem('loggedIn',JSON.stringify(loggedIn))
         navigate(`/${state.route}`)
-        window.location.reload()
+        setArr([])
       }
       else if(data.length!==0 && !state.route){
         loggedIn.isLoggedIn=true;
         loggedIn.id=data[0].id
         localStorage.setItem('loggedIn',JSON.stringify(loggedIn))
         navigate('/Order')
-        window.location.reload()
+        setArr([])
       }
       else{
         setDisplay('deActive')

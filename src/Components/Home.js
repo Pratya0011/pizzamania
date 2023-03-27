@@ -7,7 +7,7 @@ function Home() {
   const state = useContext(stateContext)
   const navigate = useNavigate()
   const onClickHandler=()=>{ 
-      navigate(`/Order`)
+      navigate('/Order')
   }
   return (
     <>
