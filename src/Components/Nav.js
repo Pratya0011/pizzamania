@@ -24,7 +24,6 @@ import ManageRecipe from "./ManageRecipe";
 
 const initialState = {
   list: list,
-  route: "",
 };
 
 function Nav() {

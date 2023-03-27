@@ -24,12 +24,14 @@ function ManageRecipe() {
       {!user[userId.id].recipe.length && (
         <div className="empty">
           <div>
-            <img src="https://png.pngtree.com/element_our/png/20180930/food-icon-design-vector-png_120564.jpg"/>
+            <img src="https://png.pngtree.com/element_our/png/20180930/food-icon-design-vector-png_120564.jpg" />
           </div>
           <div>No Recipe Saved! Please add some</div>
         </div>
       )}
-      {user[userId.id].recipe.length && <div className="saved-recipes">Saved Recipes</div>}
+      {user[userId.id].recipe.length && (
+        <div className="saved-recipes">Saved Recipes</div>
+      )}
       {user[userId.id].recipe.map((data, index) => (
         <div className="recipeDisplay" key={index}>
           <div className="recipeDisplay-div">

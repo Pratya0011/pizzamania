@@ -11,7 +11,6 @@ function ProfileDetails() {
   const [oldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassord] = useState("");
   const [checkPassord, setCheckPasword] = useState("");
-  
 
   const onSaveHandler = () => {
     user[userId.id].name = updatedName;

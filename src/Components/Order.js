@@ -8,7 +8,6 @@ function Order() {
   let userId = JSON.parse(localStorage.getItem("loggedIn"));
   let userCart = JSON.parse(localStorage.getItem("userData"));
   const [arr, setArr] = useState();
- 
 
   const buttonHandler = (name, price, id, size, image) => {
     let arr = [];
@@ -25,7 +24,7 @@ function Order() {
       userCart[userId.id].cart = arr;
       localStorage.setItem("userData", JSON.stringify(userCart));
       setArr(arr);
-      alert('Added to cart')
+      alert("Added to cart");
     } else {
       userCart[userId.id].cart.map((data) => {
         if (item.Id === data.Id) {
@@ -39,10 +38,10 @@ function Order() {
       userCart[userId.id].cart = arr;
       localStorage.setItem("userData", JSON.stringify(userCart));
       setArr(arr);
-      alert('Added to cart')
+      alert("Added to cart");
     }
   };
-  
+
   return (
     <div className="order-component">
       <stateContext.Provider value={{ userCart, userId }}>
@@ -53,12 +52,7 @@ function Order() {
         {state.list.map((item, index) => (
           <div className="pizza" key={index}>
             <div>
-              <img
-                src={item.image}
-                width="150px"
-                height="180px"
-                alt=""
-              ></img>
+              <img src={item.image} width="150px" height="180px" alt=""></img>
             </div>
             <div className="lebels">
               <div className="name">{item.name}</div>
