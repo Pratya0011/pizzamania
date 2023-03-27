@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import "../App.css";
-import { useNavigate } from "react-router-dom";
-
-const userId = JSON.parse(localStorage.getItem("loggedIn"));
-let user = JSON.parse(localStorage.getItem("userData"));
 
 function ProfileDetails() {
-  // const navigate = useNavigate()
+  let userId = JSON.parse(localStorage.getItem("loggedIn"));
+  let user = JSON.parse(localStorage.getItem("userData"));
   const [save, setSave] = useState(true);
   const [updatedName, setUpdatedName] = useState(user[userId.id].name);
   const [toggle, setToggle] = useState("Edit");
@@ -14,6 +11,7 @@ function ProfileDetails() {
   const [oldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassord] = useState("");
   const [checkPassord, setCheckPasword] = useState("");
+  
 
   const onSaveHandler = () => {
     user[userId.id].name = updatedName;
@@ -56,7 +54,7 @@ function ProfileDetails() {
       setCheckPasword("");
     }
   };
-  
+
   return (
     <div className="ProfileDetails">
       <div className="profileInformation">
