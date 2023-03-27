@@ -7,8 +7,6 @@ function Dropdown() {
     const logout=()=>{
         localStorage.removeItem('loggedIn')
         navigate('/')
-       
-       
     }
   return (
     <div >

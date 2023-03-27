@@ -58,32 +58,10 @@ function Nav() {
               </Link>
             </div>
             <ul>
-              <Link
-                className="link"
-                to="/Order"
-                onClick={(e) => {
-                  dispatch({
-                    type: "LOGGED_IN",
-                    payload: {
-                      route: e.target.textContent,
-                    },
-                  });
-                }}
-              >
+              <Link className="link" to="/Order">
                 <li>Order</li>
               </Link>
-              <Link
-                className="link"
-                to="/Recipe"
-                onClick={(e) => {
-                  dispatch({
-                    type: "LOGGED_IN",
-                    payload: {
-                      route: e.target.textContent,
-                    },
-                  });
-                }}
-              >
+              <Link className="link" to="/Recipe">
                 <li>Recipe</li>
               </Link>
               {displayIcon && (
