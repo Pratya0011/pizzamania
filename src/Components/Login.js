@@ -2,6 +2,8 @@ import React, { useState, useContext } from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
 import stateContext from "./Context";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function SignUp() {
   const [username, setUsername] = useState("");
@@ -9,6 +11,7 @@ function SignUp() {
   const [display, setDisplay] = useState("active");
   const state = useContext(stateContext);
   const navigate = useNavigate();
+
 
   const onSubmitHandler = (e) => {
     const loggedIn = {
@@ -33,7 +36,7 @@ function SignUp() {
 
         navigate("/");
         window.location.reload();
-        alert("Login Success");
+        toast.success("Login Success");
       } else {
         setDisplay("deActive");
       }
@@ -70,6 +73,7 @@ function SignUp() {
             <br />
             <button type="submit">Login</button>
           </form>
+          <ToastContainer position="top-right"autoClose={3000}theme="dark" />
           <p
             onClick={(e) => {
               navigate("/SignUp");

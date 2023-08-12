@@ -1,5 +1,7 @@
 import React, { useState, useContext } from "react";
 import stateContext from "./Context";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Recipe() {
   const recipe = useContext(stateContext);
@@ -22,7 +24,7 @@ function Recipe() {
       user[userId.id].recipe = arr;
       localStorage.setItem("userData", JSON.stringify(user));
       setArr(arr);
-      alert("saved");
+      toast.success("saved");
     } else {
       user[userId.id].recipe.map((data) => {
         if (recipe.label === data.label) {
@@ -35,7 +37,7 @@ function Recipe() {
       user[userId.id].recipe = arr;
       localStorage.setItem("userData", JSON.stringify(user));
       setArr(arr);
-      alert("saved");
+      toast.success("saved");
     }
   };
 
@@ -69,6 +71,7 @@ function Recipe() {
           </div>
         </div>
       ))}
+      <ToastContainer position="top-right"autoClose={3000}theme="dark" />
     </>
   );
 }

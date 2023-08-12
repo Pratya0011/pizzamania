@@ -1,6 +1,8 @@
 import React, { useContext, useState } from "react";
 import CartIcon from "./CartIcon";
 import stateContext from "./Context";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import gif from "../Images/animation_200_lff4ablg.gif";
 
 function Order() {
@@ -24,7 +26,7 @@ function Order() {
       userCart[userId.id].cart = arr;
       localStorage.setItem("userData", JSON.stringify(userCart));
       setArr(arr);
-      alert("Added to cart");
+      toast.success("Added to cart");
     } else {
       userCart[userId.id].cart.map((data) => {
         if (item.Id === data.Id) {
@@ -38,7 +40,7 @@ function Order() {
       userCart[userId.id].cart = arr;
       localStorage.setItem("userData", JSON.stringify(userCart));
       setArr(arr);
-      alert("Added to cart");
+      toast.success("Added to cart");
     }
   };
 
@@ -79,6 +81,7 @@ function Order() {
           </div>
         ))}
       </div>
+      <ToastContainer position="top-right"autoClose={3000}theme="dark" />
       {/* <div className='logoi'>
     <div className={greenTic}>
         <span><img src={gif}/></span>

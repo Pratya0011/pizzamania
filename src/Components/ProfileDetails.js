@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "../App.css";
 
 function ProfileDetails() {
@@ -38,12 +40,12 @@ function ProfileDetails() {
   const updatePassword = (e) => {
     e.preventDefault();
     if (oldPassword !== user[userId.id].password) {
-      alert("Incorrect Password");
+      toast.fail("Incorrect Password");
       setOldPassword("");
     } else if (newPassword !== checkPassord) {
       setNewPassord("");
       setCheckPasword("");
-      alert("Invalid Input");
+      toast.fail("Invalid Input");
     } else {
       user[userId.id].password = newPassword;
       localStorage.setItem("userData", JSON.stringify(user));
@@ -124,6 +126,7 @@ function ProfileDetails() {
               <button type="submit">Update</button>
             </span>
           </form>
+          <ToastContainer position="top-right"autoClose={3000}theme="dark" />
         </div>
       )}
     </div>

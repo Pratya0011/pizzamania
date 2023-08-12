@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function SignUp() {
   const navigate = useNavigate();
@@ -11,7 +13,7 @@ function SignUp() {
   const onSubmitHandler = (e) => {
     if (password.length <= 5) {
       e.preventDefault();
-      alert("Password too small");
+      toast.fail("Password too small");
     } else {
       let arr = [];
       let userObj = {
@@ -40,10 +42,10 @@ function SignUp() {
           arr.push(userObj);
           localStorage.setItem("userData", JSON.stringify(arr));
         }
-        alert("Account Crated Successfully");
+        toast.success("Account Crated Successfully");
         navigate("/Login");
       } else {
-        alert("Password Donot Match");
+        toast.fail("Password Donot Match");
       }
     }
   };
@@ -103,6 +105,7 @@ function SignUp() {
             <br />
             <button type="submit">Create</button>
           </form>
+          <ToastContainer position="top-right"autoClose={3000}theme="dark" />
           <p
             onClick={(e) => {
               navigate("/Login");

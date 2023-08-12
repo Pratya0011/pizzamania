@@ -118,6 +118,9 @@ body {
   height: 87vh;
   padding-left: 0px;
   margin-top: 90px;
+  background-image: url("./Images/engin-akyurt-IfAb0bjhHlc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* login container */
 .login {
