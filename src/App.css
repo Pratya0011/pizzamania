@@ -5,6 +5,7 @@ body{
   background-image: url("./Images/engin-akyurt-IfAb0bjhHlc-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height:100vh ;
 }
 .App {
   height: 88.6vh;
@@ -20,6 +21,7 @@ body {
   width: 100vw;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 /* logo nam and nav menu */
 .right-menu {
