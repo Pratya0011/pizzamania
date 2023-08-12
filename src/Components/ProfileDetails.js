@@ -40,12 +40,12 @@ function ProfileDetails() {
   const updatePassword = (e) => {
     e.preventDefault();
     if (oldPassword !== user[userId.id].password) {
-      toast.fail("Incorrect Password");
+      toast.error("Incorrect Password");
       setOldPassword("");
     } else if (newPassword !== checkPassord) {
       setNewPassord("");
       setCheckPasword("");
-      toast.fail("Invalid Input");
+      toast.error("Invalid Input");
     } else {
       user[userId.id].password = newPassword;
       localStorage.setItem("userData", JSON.stringify(user));

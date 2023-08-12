@@ -13,7 +13,7 @@ function SignUp() {
   const onSubmitHandler = (e) => {
     if (password.length <= 5) {
       e.preventDefault();
-      toast.fail("Password too small");
+      toast.error("Password too small");
     } else {
       let arr = [];
       let userObj = {
@@ -45,7 +45,7 @@ function SignUp() {
         toast.success("Account Crated Successfully");
         navigate("/Login");
       } else {
-        toast.fail("Password Donot Match");
+        toast.error("Password Donot Match");
       }
     }
   };
