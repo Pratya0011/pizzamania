@@ -105,7 +105,7 @@ function SignUp() {
             <br />
             <button type="submit">Create</button>
           </form>
-          <ToastContainer position="top-right"autoClose={3000}theme="dark" />
+          <ToastContainer position="top-right"autoClose={3000}theme="light" />
           <p
             onClick={(e) => {
               navigate("/Login");

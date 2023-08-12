@@ -81,7 +81,7 @@ function Order() {
           </div>
         ))}
       </div>
-      <ToastContainer position="top-right"autoClose={3000}theme="dark" />
+      <ToastContainer position="top-right"autoClose={3000}theme="light" />
       {/* <div className='logoi'>
     <div className={greenTic}>
         <span><img src={gif}/></span>
