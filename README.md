@@ -48,4 +48,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - Axios: A popular JavaScript library used for making HTTP requests from the client-side to interact with the server and APIs.
 - Font Awesome Icons: A comprehensive library of icons that can be easily integrated into the project to enhance the user interface.
 
-- Desclaimer - All rights of images are belong to the Pizza Mania. This project is created just for educational purposes only. we do not intend to use it for any commercial purposes.
+ ### Desclaimer 
+All rights of images are belong to the Pizza Mania. This project is created just for educational purposes only. we do not intend to use it for any commercial purposes.
