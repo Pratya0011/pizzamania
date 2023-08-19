@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Pizza Mania 
+Live Link: https://pizzamania-md28.onrender.com/
+
+## Description
+Pizza Ordering and Recipe Searching Website using React Js
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,6 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install` then 
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -13,11 +18,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -29,42 +29,23 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Features & Usage
+- Login or Register
+- Navigate to different section using nav bar
+- Order: Add any pizza of your choice to cart
+- Recipe: Search and save recipe of any item of your choice
+- Cart: Select quantity, select delivery address and place order
+- Profile Info: Update details of ypor profile
+- Recipo Info: Get all your saved recipes
+- Address: Add or edit saved addresses
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
+- React Js 
+- Context to manage global state
+- Local storage to store user data
+- CSS: Cascading Style Sheets used for styling the web application, ensuring a visually appealing and consistent design.
+- React Router: A library for handling client-side routing in a React application, enabling navigation between different components and pages.
+- Axios: A popular JavaScript library used for making HTTP requests from the client-side to interact with the server and APIs.
+- Font Awesome Icons: A comprehensive library of icons that can be easily integrated into the project to enhance the user interface.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Desclaimer - All rights of images are belong to the Pizza Mania. This project is created just for educational purposes only. we do not intend to use it for any commercial purposes.
