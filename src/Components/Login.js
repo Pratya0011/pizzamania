@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
 import stateContext from "./Context";
+import {compare} from 'bcryptjs'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -13,34 +14,47 @@ function SignUp() {
   const navigate = useNavigate();
 
 
-  const onSubmitHandler = (e) => {
-    const loggedIn = {
-      isLoggedIn: "",
-      id: "",
-    };
+  const onSubmitHandler =async (e) => {
     e.preventDefault();
-    if (username === "" && password === "") {
-      setDisplay("deActive");
-    } else if (JSON.parse(localStorage.getItem("userData"))) {
-      const data = JSON.parse(localStorage.getItem("userData")).filter(
-        (data) => {
-          if (data.username === username && data.password === password)
-            return data;
-          else return null;
-        }
-      );
-      if (data.length !== 0) {
-        loggedIn.isLoggedIn = true;
-        loggedIn.id = data[0].id;
-        localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
 
+    if (username === "" || password === "") {
+      setDisplay("deActive");
+      return;
+    }
+  
+    const userData = JSON.parse(localStorage.getItem("userData"));
+  
+    if (!userData) {
+      setDisplay("deActive");
+      return;
+    }
+  
+    const matchingUser = userData.find((data) => data.username === username);
+  
+    if (!matchingUser) {
+      setDisplay("deActive");
+      return;
+    }
+  
+    try {
+      const passwordMatch = await compare(password, matchingUser.password);
+  
+      if (passwordMatch) {
+        const loggedIn = {
+          isLoggedIn: true,
+          id: matchingUser.id,
+        };
+  
+        localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
+  
         navigate("/");
         window.location.reload();
         toast.success("Login Success");
       } else {
         setDisplay("deActive");
       }
-    } else {
+    } catch (error) {
+      console.error("Error comparing passwords:", error);
       setDisplay("deActive");
     }
   };

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { hash, hashSync } from 'bcryptjs';
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,7 +21,7 @@ function SignUp() {
         id: 0,
         name: name,
         username: username,
-        password: password,
+        password: '',
         cart: [],
         cartCount: 0,
         address: [],
@@ -29,6 +30,8 @@ function SignUp() {
         total: 0,
       };
       if (password === cPassword) {
+        const hashedPassword =  hashSync(password, 10);
+        userObj.password = hashedPassword;
         if (JSON.parse(localStorage.getItem("userData")) === null) {
           arr.push(userObj);
           localStorage.setItem("userData", JSON.stringify(arr));
